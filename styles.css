@@ -1,0 +1,133 @@
+/* styles.css */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-light: #f8f9fa;
+    --text-color: #2c3e50;
+    --code-bg: #1e1e1e;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: white;
+}
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    border-right: 2px solid var(--background-light);
+    padding: 1.5rem;
+    overflow-y: auto;
+    box-shadow: var(--shadow);
+    z-index: 1000;
+}
+
+#navbar header {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.nav-link {
+    display: block;
+    padding: 0.8rem 1rem;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--background-light);
+    transform: translateX(5px);
+}
+
+#main-doc {
+    margin-left: 320px;
+    padding: 3rem;
+    max-width: 800px;
+}
+
+.main-section {
+    margin-bottom: 3rem;
+    scroll-margin-top: 2rem;
+}
+
+.main-section header {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--background-light);
+}
+
+code {
+    display: block;
+    background-color: var(--code-bg);
+    color: #d4d4d4;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    font-family: 'Fira Code', monospace;
+    white-space: pre-wrap;
+    tab-size: 4;
+    box-shadow: var(--shadow);
+}
+
+ul {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+    list-style-type: '→';
+}
+
+li {
+    margin-bottom: 0.8rem;
+    padding-left: 0.8rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        position: static;
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+
+    #main-doc {
+        margin-left: 0;
+        padding: 2rem;
+    }
+}
+
+.main-section:target {
+    animation: highlight 1.5s ease-out;
+}
+
+@keyframes highlight {
+    0% {
+        background-color: rgba(52, 152, 219, 0.2);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação Técnica Python</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Documentação Python</header>
+        <a href="#Introdução" class="nav-link">Introdução</a>
+        <a href="#Sintaxe_Básica" class="nav-link">Sintaxe Básica</a>
+        <a href="#Estruturas_de_Controle" class="nav-link">Estruturas de Controle</a>
+        <a href="#Funções" class="nav-link">Funções</a>
+        <a href="#Listas_e_Dicionários" class="nav-link">Listas e Dicionários</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introdução">
+            <header>Introdução</header>
+            <p>Python é uma linguagem de programação interpretada de alto nível e propósito geral.</p>
+            <p>Principais características:</p>
+            <ul>
+                <li>Sintaxe clara e legível</li>
+                <li>Tipagem dinâmica</li>
+                <li>Multi-paradigma</li>
+                <li>Grande comunidade de desenvolvedores</li>
+            </ul>
+            <code>print("Olá Mundo!")</code>
+        </section>
+
+        <section class="main-section" id="Sintaxe_Básica">
+            <header>Sintaxe Básica</header>
+            <p>Exemplo de declaração de variáveis:</p>
+            <code>nome = "João"
+idade = 30
+altura = 1.75</code>
+            <p>Blocos são definidos por indentação:</p>
+            <code>if idade >= 18:
+    print("Maior de idade")
+else:
+    print("Menor de idade")</code>
+        </section>
+
+        <section class="main-section" id="Estruturas_de_Controle">
+            <header>Estruturas de Controle</header>
+            <p>Estruturas condicionais:</p>
+            <code>nota = 8.5
+if nota >= 7:
+    status = "Aprovado"
+elif nota >= 5:
+    status = "Recuperação"
+else:
+    status = "Reprovado"</code>
+
+            <p>Loops iterativos:</p>
+            <ul>
+                <li>For loop</li>
+                <li>While loop</li>
+                <li>Compreensões de lista</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Funções">
+            <header>Funções</header>
+            <p>Definição básica de funções:</p>
+            <code>def calcular_imc(peso, altura):
+    return peso / (altura ** 2)</code>
+            <p>Parâmetros opcionais:</p>
+            <code>def saudacao(nome="usuário"):
+    print(f"Bem-vindo, {nome}!")</code>
+        </section>
+
+        <section class="main-section" id="Listas_e_Dicionários">
+            <header>Listas e Dicionários</header>
+            <p>Exemplo de lista:</p>
+            <code>frutas = ["maçã", "banana", "laranja"]
+numeros = [1, 2, 3, 4, 5]</code>
+            <p>Exemplo de dicionário:</p>
+            <code>pessoa = {
+    "nome": "Maria",
+    "idade": 25,
+    "cidade": "São Paulo"
+}</code>
+            <ul>
+                <li>Listas são ordenadas e mutáveis</li>
+                <li>Dicionários armazenam pares chave-valor</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
