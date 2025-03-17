@@ -1,6 +1,6 @@
 # 🔥 projeto-documentacao-freecodecamp
 
-## Projeto página de documentação técnica
+## 📝 Projeto página de documentação técnica
 
 __Desafio proposto:__
 
